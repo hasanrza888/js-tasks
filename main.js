@@ -66,7 +66,39 @@ console.log(sum);
 
 //------------------------------------------- ulduz -----------------------------------------
 
+n=Number(prompt('ededi daxil eidn!'));
 
+let a = [];
+let b = [];
+
+for(let i=2; i<=n; i++){
+
+    let count=0;
+
+    for(let j=2; j<i; j++){
+
+        if(i%j==0){
+
+            count=1;
+            break;
+        }
+
+    }
+
+    if(i>1 && count==0){
+        a.push(i);
+    }
+
+
+}
+
+for(let k=a.length-1; k>=0; k--){
+    b.push(a[k]);
+}
+
+for(let p of b){
+    console.log(p);
+}
 
 
 
