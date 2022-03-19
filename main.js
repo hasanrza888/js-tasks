@@ -155,3 +155,34 @@ for(let i=0; i<n.length; i++){
 }       
 
 console.log(a)
+
+
+// --------------------------------------------------- ulduz --------------------------------------------
+
+n=Number(prompt('Fibonaççi ardıcıllığının n-ci üzvü ucun eded daxil edin!'));
+
+if(isNaN(n)){
+
+    console.log('eded daxil etmediniz!');
+
+}else if(n<0){
+
+    console.log('menfi eded daxil etdiniz!');
+
+}else{
+        let f=[];
+        let b=[];
+
+        let first=0;
+        let second=1;
+        let nextnum;
+
+        for(let i=1; i<=n; i++){
+
+            console.log(first);
+            nextnum=first+second;
+            first=second;
+            second=nextnum;
+
+        }
+}
